@@ -693,4 +693,37 @@ h4 {
   .logo-container img {
     height: 60px;
   }
+
+  /* Location Section Mobile Fixes */
+  .location-section {
+    padding-top: 60px;
+  }
+
+  .address-box {
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 16px;
+  }
+
+  /* Specific targeting to ensure overrides */
+  .address-box .btn {
+    width: 100%;
+  }
+
+  .map-box {
+    height: 300px; /* Reduced height for mobile */
+  }
 }
