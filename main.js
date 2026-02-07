@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const whatsappCartBtn = document.getElementById("whatsappCartBtn");
 
   // State
-  const phoneNumber = "905332468020";
+  const phoneNumber = "905320695937";
   let cart = JSON.parse(localStorage.getItem("coffeeCart")) || [];
 
   // Initialize
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsappCartBtn.innerHTML = '<i class="fab fa-whatsapp"></i> WhatsApp';
       whatsappCartBtn.style.background = "";
     } else {
-      let message = "Merhaba Sestra Coffee, sipariş vermek istiyorum:\n\n";
+      let message = "Merhaba Mandel Coffee, sipariş vermek istiyorum:\n\n";
       cart.forEach((item) => {
         message += `▪ ${item.quantity}x ${item.name} (${(item.price * item.quantity).toFixed(2)} TL)\n`;
       });
